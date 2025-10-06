@@ -95,7 +95,6 @@ function requireAuth(req,res,next){
     res.json({ ok:true, token, username });
   }catch(e){
     res.status(500).json({error:'server'});
-  }
 });
 
 

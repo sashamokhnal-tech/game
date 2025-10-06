@@ -40,7 +40,7 @@ const TIME_ZONE = CFG_TZ || 'America/Los_Angeles';
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
-const DATA_PATH = path.join(__dirname, 'leaderboard.json');
+
 
 function loadData(){
   try { return JSON.parse(fs.readFileSync(DATA_PATH,'utf8')); }
